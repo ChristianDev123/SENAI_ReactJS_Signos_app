@@ -8,18 +8,21 @@ import gemeos_img from '../../assets/imgs/gemeos.jpg';
 
 export default function Listing(){
     const [list, setList] = useState([
-        {image:aries_img, nameSigno:"", description:"Teste"},
-        {image:touro_img, nameSigno:"", description:"Teste"},
-        {image:gemeos_img, nameSigno:"", description:"Teste"}
+        {idSigno:'1', image:aries_img, nameSigno:"", description:"Teste"},
+        {idSigno:'2', image:touro_img, nameSigno:"", description:"Teste"},
+        {idSigno:'3', image:gemeos_img, nameSigno:"", description:"Teste"},
     ]);
+    const [currentPage, setCurrentPage] = useState(0);
+
+    
 
     return(
         <>
             <section className='listing_box'>
-                <Row>
+                <Row className='box_aligner'>
                     <Col sm='1'>
-                        <div className='pagination behind_btn'>
-                            <PaginationBtn direction='left' />
+                        <div className='pagination previous_btn'>
+                            <PaginationBtn direction='left' modifyList={setList} currentList={list} changePage={setCurrentPage} verifierPage={currentPage} />
                         </div>
                     </Col>
                     <Col>
@@ -27,7 +30,7 @@ export default function Listing(){
                             <Row lg='3' md='2' sm='1'>
                                     {list.map((signo)=>{
                                         return(
-                                            <Col key='1' className='cards_delimiter'>
+                                            <Col key={signo.idSigno} className='cards_delimiter'>
                                                 <CardsSignos image={signo.image} title={signo.nameSigno} subtitle='Teste' description={signo.description}/>
                                             </Col>
                                         );
@@ -36,8 +39,8 @@ export default function Listing(){
                         </div>
                     </Col>
                     <Col sm='1'>
-                        <div className='pagination foward_btn'>
-                            <PaginationBtn direction='right' />
+                        <div className='pagination next_btn'>
+                            <PaginationBtn direction='right' modifyList={setList} currentList={list} changePage={setCurrentPage} verifierPage={currentPage}/>
                         </div>
                     </Col>
                 </Row>
@@ -46,6 +49,9 @@ export default function Listing(){
                 .listing_box{
                     margin-top:40px;
                     margin-bottom:40px;
+                }
+                .box_aligner{
+                    align-items:center;
                 }
             `}</style>
         </>
