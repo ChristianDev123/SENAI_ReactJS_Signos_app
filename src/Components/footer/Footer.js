@@ -8,14 +8,25 @@ export default function Footer(){
                     <Col>
                         <Container>
                             <div className='contacts_dev content_footer'>
-                                Contacts
+                                Contatos
+                                <ul>
+                                    <li>* Senai Suiço-Brasileira</li>
+                                    <li>Desenvolvedor: Christian Lima Santana</li>
+                                    <li>Grupo: TekCoders</li>
+                                    <li>Repositório Projeto: <a href="https://github.com/ChristianDev123/SENAI-_Signos_app/tree/main">Repositório Main</a></li>
+                                </ul>
                             </div>
                         </Container>
                     </Col>
                     <Col>
                         <Container>
                             <div className='tools_page content_footer'>
-                                Tools
+                                <h3>Ferramentas </h3>
+                                <ul>
+                                    <li><span className='origin_info'>(Informações retiradas da wikipedia)</span></li>
+                                    <li>ReactJs (yarn)</li>
+                                    <li>Bootstrap (Reactstrap)</li>
+                                </ul>
                             </div>
                         </Container>
                     </Col>
@@ -28,8 +39,18 @@ export default function Footer(){
                     padding:10px;
                     color:white;
                 }
+                .container_box a{
+                    color:white;
+                }
+                .container_box ul{
+                    list-style:none; 
+                }
+                .container_box .tools_page span.origin_info{
+                    font-weight:bold;
+                    font-size:28px;
+                }
                 .container_box .content_footer{
-                    font-size:30px;
+                    font-size:22px;
                 }
             `}</style>
         </>
