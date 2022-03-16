@@ -15,9 +15,6 @@ export default function CardsSignos(props){
                         <CardTitle tag='h2'>
                             {props.title}
                         </CardTitle>
-                        <CardSubtitle>
-                            {props.subtitle}
-                        </CardSubtitle>
                         <CardText>
                             {props.description}
                         </CardText>

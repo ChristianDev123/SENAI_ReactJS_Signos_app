@@ -36,13 +36,13 @@ export default function Listing(){
             <section className='listing_box'>
                 <div className='cards_box'>
                     <Row lg='3' md='2' sm='1'>
-                            {list.map((signo)=>{
-                                return(
-                                    <Col key={signo.idSigno} className='cards_delimiter'>
-                                        <CardsSignos image={signo.image} title={signo.nameSigno} description={signo.description}/>
-                                    </Col>
-                                );
-                            })}    
+                         {list.map((signo)=>{
+                            return(
+                                <Col key={signo.idSigno} className='cards_delimiter'>
+                                    <CardsSignos image={signo.image} title={signo.nameSigno} description={signo.description}/>
+                                 </Col> 
+                            );
+                         })} 
                     </Row>
                 </div>
             </section>
