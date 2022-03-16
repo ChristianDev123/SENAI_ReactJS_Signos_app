@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a8a0596.css",
+    "main.js": "/static/js/main.ea37072f.js",
+    "static/media/virgem.jpg": "/static/media/virgem.f233f0586261dd1fb6d6.jpg",
+    "static/media/cancer.jpg": "/static/media/cancer.8fd69c16d5f0ba869e17.jpg",
+    "static/media/leao.jpg": "/static/media/leao.552c02f4ea4eb5bb64d8.jpg",
+    "static/media/capricornio.jpg": "/static/media/capricornio.49f9a6e3c5ef81da4c27.jpg",
+    "static/media/peixes.jpg": "/static/media/peixes.f74e98ffd31a45b60ae8.jpg",
+    "static/media/gemeos.jpg": "/static/media/gemeos.bbbbedfebedccff542de.jpg",
+    "static/media/sargitario.jpg": "/static/media/sargitario.b76e98d87eba1a077c64.jpg",
+    "static/media/libra.jpg": "/static/media/libra.0d569ebdd43de532b5c8.jpg",
+    "static/media/aquario.jpg": "/static/media/aquario.3039c1a84c75d43c2fe6.jpg",
+    "static/media/touro.jpg": "/static/media/touro.e91f6a4412c71800f54e.jpg",
+    "static/media/escorpiao.jpg": "/static/media/escorpiao.13b1cc0e5511caf14ee4.jpg",
+    "static/media/aries.jpg": "/static/media/aries.1d8670b09062c7bcefb1.jpg",
+    "index.html": "/index.html",
+    "main.1a8a0596.css.map": "/static/css/main.1a8a0596.css.map",
+    "main.ea37072f.js.map": "/static/js/main.ea37072f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.ea37072f.js"
+  ]
+}
